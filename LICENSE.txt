@@ -1,0 +1,16 @@
+Custom Non-Commercial License  
+Copyright (C) 2025 Ishan Rai 
+
+Permission is granted to use, modify, and distribute this software for **non-commercial purposes only**.  
+
+# You MAY:
+- Use, modify, and share this software for personal, educational, or research purposes.
+- Contribute improvements to this project.  
+
+# You MAY NOT:
+- Sell, rent, or license this software or any derivative work.
+- Use this software in a commercial product or service.
+- Remove or alter this license.  
+
+This software is provided "as-is" without warranty of any kind.  
+For commercial licensing inquiries, contact ishanrai1109@gmail.com.
