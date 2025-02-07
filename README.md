@@ -10,4 +10,4 @@ Build an AI-powered disaster monitoring system that:
 •Summarizes the most critical information and generates priority alerts for rescue teams.
 •Provides location-based insights on the severity of the disaster.
 
-##This project is currently under developement, watch and star it on the repository's homepage to be notified about updates.
+## This project is currently under developement, watch and star it on the repository's homepage to be notified about updates.
