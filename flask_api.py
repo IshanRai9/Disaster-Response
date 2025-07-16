@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from analyze_text import summaries  # Import summaries variable
 
 app = Flask(__name__)
 
