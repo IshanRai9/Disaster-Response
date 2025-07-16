@@ -1,12 +1,17 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from fetch_news import fetch_news
+from fetch_tweets import fetch_tweets
+import os
+from dotenv import load_dotenv
+import google.generativeai as genai
 
-tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/deepseek-r1")
-model = AutoModelForCausalLM.from_pretrained("deepseek-ai/deepseek-r1")
+load_dotenv()
+
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def analyze_text(text):
-    inputs = tokenizer(text, return_tensors="pt")
-    output = model.generate(**inputs, max_length=500)
-    return tokenizer.decode(output[0], skip_special_tokens=True)
+    model = genai.GenerativeModel('gemini-pro')
+    response = model.generate_content(text)
+    return response.text
 
 texts = fetch_tweets("earthquake") + fetch_news()
 summaries = [analyze_text(text) for text in texts]
